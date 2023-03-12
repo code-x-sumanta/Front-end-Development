@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- Code is starting from here -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .card{
+            padding:23px 12px;
+            margin:23px 12px;
+            border:2px solid red;
+            background-color:aqua;
+            /* box shadow offset x offset y color */
+            /* box-shadow: 10px 13px green; */
+
+            /* box-shadow:-7px -5px 10px 34px green; */
+
+            box-shadow: 3px 5px green;
+            box-shadow: 3px 5px green, 4px 6px red;
+        }
+        .card h2{
+            /* text-shadow: 2px 2px rgb(89, 22, 22); */
+            text-shadow: 2px 2px 5px rgb(89, 22, 22);
+        }
+    </style>
+</head>
+
+<body>
+   <div class="container">
+    <div class="card" id="card-1">
+        <h2>This is C++ Course</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eum, quibusdam dolorum assumenda qui magnam iure, officiis laudantium labore totam animi, harum quam quia! Quisquam quasi, dolorem id nobis quae totam vitae deserunt magnam!</p>
+    </div>
+    <div class="card" id="card-2">
+        <h2>This is HTML course</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus officiis quae, modi sunt eveniet accusamus reprehenderit commodi quisquam fugit, alias vitae? Aut necessitatibus doloribus suscipit rem consequuntur mollitia, rerum, beatae eaque, quibusdam tenetur officiis?</p>
+    </div>
+    <div class="card" id="card-3">
+        <h2>This is C course</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptate ad vero labore aut, aliquam voluptas cumque praesentium laborum iste ducimus fuga doloribus consequuntur nihil, aspernatur eum minima suscipit similique maxime quia distinctio ipsum recusandae vitae? Similique, facilis commodi!</p>
+    </div>
+   </div>
+</body>
+
+</html>

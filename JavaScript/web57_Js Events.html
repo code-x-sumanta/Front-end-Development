@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!-- Code is starting from here -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Events</title>
+    
+</head>
+
+<body>
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    form event:
+    submit
+    focus
+
+    DOMContantLoded
+
+    transitionend -->
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque neque veritatis error rem itaque ipsa fuga consequatur voluptate maiores hic eaque est consequuntur officia, numquam soluta, enim quas asperiores, nam obcaecati fugiat facere ab?</p>
+    </div>
+    <button id="btn" onClick="toggleHide()">Show/Hide</button>
+
+    <script>
+        
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log('Mouse Inside');
+        });
+        para.addEventListener('mouseout', function run(){
+            console.log('Mouse outside');
+        });
+
+        function toggleHide(){
+            // let btn = document.getElementById('btn');
+            // let para = document.getElementById('para');
+            if(para.style.display !='none')
+                para.style.display='none';
+            else
+                para.style.display='block'
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!-- Code is starting from here -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attributes and nth child psudocode</title>
+    <style>
+        
+        .container{
+            display: block;
+            width:233px;
+            margin:auto;
+        }
+        .item{
+            font-size:15px;
+        }
+        input{
+            display: block;
+            padding:5px;
+            margin:5px;
+
+        }
+        input[type='text']{
+            
+            border:2px solid blue;
+            
+        }
+        a[target]{
+            font-size:30px;
+            color:red;
+        }
+        a[target="_self"]{
+            font-size:30px;
+            color:rgb(0, 4, 255);
+        }
+        input[type='email']{
+            color:green;
+            border:2px solid black;
+        }
+        /* This will apply css for third child */
+
+        li:nth-child(odd){
+            color:aqua;
+        }
+        li:nth-child(2n+0){
+            color:rgb(167, 6, 6);
+        }
+</style>
+    
+</head>
+
+<body>
+   <div class="container">
+    <h1><a href="http://google.com" target="_blank">Go to Google</a>
+    <h1><a href="http://facebook.com" target="_self">Go to facebook</a>
+    <form action="" class="forn-control">
+        <input type="text" placeholder="Enter your name">
+        <input type="password" placeholder="Enter your password">
+        <input type="email" placeholder="Enter your email">
+        <input type="submit" value="Submit">
+    </form>
+    <li class="item" id="item-1">Item1</li>
+    <li class="item" id="item-2">Item2</li>
+    <li class="item" id="item-3">item3</li>
+    <li class="item" id="item-4">item4</li>
+    <li class="item" id="item-5">item5</li>
+    <li class="item" id="item-6">item6</li>
+    <li class="item" id="item-7">item7</li>
+    <li class="item" id="item-8">item8</li>
+   </div>
+</body>
+
+</html>

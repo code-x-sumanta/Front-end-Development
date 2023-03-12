@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- Code is starting from here -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Styling Links and Buttons</title>
+    <style>
+        .container{
+            background-color:gray;
+            padding:22px;
+            border:2px solid red;
+            margin: auto;
+            width:666px;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:white;
+            background-color:blue;
+        }
+        a:visited{
+            color:yellow;
+        }
+        a:active{
+            background-color:blue;
+        }
+        .btn{
+            background-color:blueviolet;
+            padding:6px;
+            border:0px;
+            cursor:pointer;
+            font: 15px;
+            border-radius:5px;
+        }
+        .btn:hover{
+            color:white;
+            background-color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure tempora qui nisi sint ratione dicta officia, est veritatis commodi earum reprehenderit esse explicabo repudiandae facere repellat distinctio. Odio a sequi beatae sed!</p>
+        <a href="google.com" class="btn">read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+
+</html>

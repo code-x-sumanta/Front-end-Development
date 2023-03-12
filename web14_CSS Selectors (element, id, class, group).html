@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!-- Code is starting from here -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors (element, id, class, group)</title>
+    <style>
+        /* Element Selector */
+        p{
+            color:red;
+            border: 1px solid green;
+        }
+    </style>
+    <style>
+        /* id Selector */
+        #redElement{
+            color:blue;
+        }
+        /* class Selector */
+        .yellowCol{
+            color:yellowgreen;
+        }
+
+        .bgColor{
+            background-color:brown;
+        }
+        /* Grouping Selector */
+        footer, span{
+            color:blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>
+        CSS Selectors
+    </h3>
+    <p id="redElement">This is a simple paragraph of CSS selectors</p>
+    <p id="secondPara" class="yellowCol bgColor">This is a simple paragraph of CSS selectors</p>
+    <p>This is a simple paragraph of CSS selectors</p>
+    <div>
+        <p>This is a simple paragraph of CSS selectors</p>
+    </div>
+    <span>This is a span</span>
+    <footer>
+        This is a footer
+    </footer>
+</body>
+
+</html>

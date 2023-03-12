@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!-- Code is starting from here -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulation DOM</title>
+    
+</head>
+
+<body>
+   <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More</li>
+            <li>Contact us</li>
+        </ul>
+   </div>
+   <div class="container">
+        Another Container
+   </div>
+   <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        let contant1= document.getElementsByClassName('container');
+        console.log(contant1);
+
+        let sel= document.querySelector('.container');
+        console.log("Selector returns",sel);
+
+        let sel1= document.querySelector('#nav');
+        console.log("Selector returns",sel1);
+
+        let sel2= document.querySelectorAll('#nav>li');
+     //    console.log("Selector returns",sel2);
+          Array.from(sel2).forEach(elems => {
+          console.log(elems);
+          elems.style.color = 'red';
+     });
+
+
+   </script>
+</body>
+
+</html>

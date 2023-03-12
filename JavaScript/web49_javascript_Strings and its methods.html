@@ -1,0 +1,35 @@
+<!-- Code is starting from here -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript_Strings and its methods</title>
+
+    
+    
+</head>
+
+<body>
+    <div class="container">
+        <h2>This is heading</h2>
+        <div id="content"></div>
+    </div>
+    <script>
+        var name="Sumanta";
+        var gender="male";
+        var place="Garhbeta";
+        var temp=`${name} is a good boy and he is ${gender} and he is from ${place}`;
+        console.log(temp);
+
+        var len=name.length;
+        console.log(`${len}`);
+
+        var y= new String("This");
+        console.log(y);
+        document.getElementById('content').innerHTML='<h3>This is another heading<h3>'
+    </script>
+</body>
+
+</html>
